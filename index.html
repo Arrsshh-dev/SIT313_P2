@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <br>
+    <!--Navigation Bar-->
+    <nav class="flex items-center justify-start px-5 gap-8 text-sky-400">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <br>
+    <!--Banner-->
+    <div class="relative w-full h-[350px] overflow-hidden group">
+        <img src="./images/deakin.png" alt="Banner image" class="w-full h-full object-cover block">
+        <div class="absolute bottom-0 left-0 w-full
+                bg-black/70 text-white text-center
+                py-3 opacity-0 group-hover:opacity-100">
+            Hey, I'm Arsh
+        </div>
+    </div>
+
+    <!--Author Profile -->
+    <div id="about" class="flex flex-col items-center text-center max-w-2xl mx-auto px-5 py-16">
+
+        <img src="./images/Me.jpeg" alt="Profile photo" class="w-40 h-40 rounded-full object-cover mb-5">
+        <p class="text-teal-500 mb-5">
+            I am a full-stack web developer based in Punjab,India.
+        </p>
+        <hr class="w-full border-2 border-teal-500">
+
+        <h2 class="mt-5 text-lg font-md text-teal-500">
+            Here's what I've done so far
+        </h2>
+
+        <!--Work-->
+        <section id="work" class="max-w-5xl mx-auto"></section>
+        <div class="flex flex-col items-center gap-4 mt-5 w-full">
+            <div class="flex items-center gap-4 bg-gray-50 rounded-lg p-2 w-full max-w-md">
+                <img src="./images/Proj.jpeg" alt="Project snapshot 1" class="w-30 h-20 object-cover rounded">
+                <p><strong>HEALTHSYNC:</strong> An IoT-based Elderly Health monioring system.
+                    Uses sensors such as: MAX30102, MLX90614, DHT11 etc. Sends Email alerts in case of an emergency.</p>
+            </div>
+            <div class="flex items-center gap-4 bg-gray-50 rounded-lg p-2 w-full max-w-md">
+                <img src="./images/proj2.jpg" alt="Project snapshot 2" class="w-30 h-20 object-cover rounded">
+                <p><strong>CAMPUSGRID: </strong> A hackathon winning software solution which is
+                    a campus distributed computing platform</p>
+            </div>
+        </div>
+
+        <div class="w-16 h-0.5 bg-teal-500 my-5"></div>
+        <p class="font-semibold text-teal-500">My photos</p>
+    </div>
+
+    <!--Photos-->
+
+    <div class="flex flex-wrap justify-center gap-4">
+        <img src="./images/pexels-elizabeth-zernetska-86424040-37054687.jpg" alt="Gallery photo 1"
+            class="flex-grow w-56 h-56 object-cover rounded">
+        <img src="./images/pexels-javier-del-casar-154790595-38740461.jpg" alt="Gallery photo 2"
+            class="flex-grow w-56 h-56 object-cover rounded">
+        <img src="./images/pexels-rachid-bendhiba-2151490392-37926803.jpg" alt="Gallery photo 3"
+            class="flex-grow w-56 h-56 object-cover rounded">
+        <img src="./images/pexels-simon-ridder-2160891488-38973794.jpg" alt="Gallery photo 4"
+            class="flex-grow w-56 h-56 object-cover rounded">
+    </div>
+    </section>
+
+    <div class="flex justify-center">
+
+        <form action="/subscribe" method="POST" class="flex items-center bg-gray-200 px-2 py-1 gap-2 mt-6 mb-6">
+
+            <!-- Heading -->
+            <label for="email" class="text-xl font-bold tracking-wide text-black whitespace-nowrap">
+                SIGN UP FOR OUR DAILY INSIDER
+            </label>
+
+            <!-- Email input -->
+            <input type="email" id="email" name="email" placeholder="Enter your email" required
+                class="w-48 h-7 px-2 text-sm border border-gray-500 focus:outline-none">
+
+            <!-- Submit button -->
+            <button type="submit" class="h-7 px-3 bg-gray-400 text-black text-xs hover:bg-gray-500">
+                Subscribe
+            </button>
+
+        </form>
+    </div>
+</body>
+
+</html>
